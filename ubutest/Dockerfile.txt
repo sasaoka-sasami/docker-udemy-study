@@ -1,0 +1,6 @@
+# ベースイメージとしてUbuntuを指定
+FROM ubuntu:latest
+
+# パッケージリストを更新し、不要なキャッシュを削除
+RUN apt-get update && apt-get clean
+
